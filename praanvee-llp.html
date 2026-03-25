@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praanvee LLP | Project Management & Organic Agriculture</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        corporate: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            500: '#64748b',
+                            700: '#334155',
+                            900: '#0f172a',
+                        },
+                        nature: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .clip-diagonal { clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-100 py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tight text-corporate-900">Praanvee<span class="text-nature-600">LLP</span></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#hero" class="text-gray-600 hover:text-corporate-900 font-medium transition-colors">Home</a>
+                <a href="#management" class="text-gray-600 hover:text-corporate-900 font-medium transition-colors">Project Management</a>
+                <a href="#agriculture" class="text-gray-600 hover:text-corporate-900 font-medium transition-colors">Agriculture</a>
+            </div>
+            <a href="#contact" class="px-6 py-2.5 bg-corporate-900 text-white rounded-full font-medium hover:bg-corporate-700 transition-all transform hover:scale-105 shadow-md">
+                Contact Us
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-32 pb-40 lg:pt-48 lg:pb-56 overflow-hidden clip-diagonal bg-corporate-900">
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-corporate-900 via-corporate-800 to-nature-900 opacity-90"></div>
+            <!-- Decorative circles -->
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-nature-500/10 blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-blue-500/10 blur-3xl"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-white/10 text-nature-100 font-medium text-sm mb-6 border border-white/20 backdrop-blur-sm">
+                Excellence in Execution & Nature
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-8">
+                Shaping the Future with <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-nature-100 to-nature-400">Praanvee LLP</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-corporate-100 max-w-3xl mx-auto font-light leading-relaxed mb-10">
+                Bridging the gap between cutting-edge project management strategies and sustainable, premium organic agriculture.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#management" class="px-8 py-4 bg-white text-corporate-900 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all hover:-translate-y-1 shadow-xl">
+                    Our Projects
+                </a>
+                <a href="#agriculture" class="px-8 py-4 bg-nature-600 text-white rounded-full font-semibold text-lg hover:bg-nature-500 transition-all hover:-translate-y-1 shadow-xl shadow-nature-600/30">
+                    Organic Produce
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Management Section -->
+    <section id="management" class="py-24 bg-gray-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-corporate-100 text-corporate-600 mb-6 shadow-sm">
+                    <i data-lucide="kanban-square" class="w-8 h-8"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-corporate-900">Expert Project Management</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    We deliver comprehensive project management services, steering complex initiatives from concept to successful completion with precision and agility.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6 border border-blue-100 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <i data-lucide="target" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-corporate-900">Strategic Planning</h3>
+                    <p class="text-gray-600 leading-relaxed">Aligning your visions with actionable milestones and robust resource allocation frameworks.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mb-6 border border-purple-100 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                        <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-corporate-900">Risk Mitigation</h3>
+                    <p class="text-gray-600 leading-relaxed">Proactive identification and management of project risks to ensure on-time and on-budget delivery.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center mb-6 border border-orange-100 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-corporate-900">Team Leadership</h3>
+                    <p class="text-gray-600 leading-relaxed">Fostering collaboration and driving cross-functional teams towards common organizational goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agriculture Section -->
+    <section id="agriculture" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <!-- Content -->
+                <div class="lg:w-1/2">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-nature-50 text-nature-700 font-medium mb-6 border border-nature-100">
+                        <i data-lucide="leaf" class="w-4 h-4"></i>
+                        <span>Sustainable & Organic Farming</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                        Premium Organic <br>Fruits & Produce
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        At Praanvee LLP, we cultivate the finest quality organic fruits using eco-friendly and sustainable agricultural practices directly from our sun-kissed orchards.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-5 rounded-2xl border border-nature-200 bg-nature-50/50 hover:bg-nature-50 transition-colors">
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="bg-nature-100 p-2 rounded-lg text-nature-600"><i data-lucide="apple" class="w-5 h-5"></i></span>
+                                <h4 class="font-bold text-gray-900">Mangoes</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Alphonso, Kesar, Sonpari</p>
+                        </div>
+                        <div class="p-5 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <h4 class="font-bold text-gray-900 mb-1">Bananas</h4>
+                            <p class="text-sm text-gray-600">Fresh & Organic</p>
+                        </div>
+                        <div class="p-5 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <h4 class="font-bold text-gray-900 mb-1">Custard Apples</h4>
+                            <p class="text-sm text-gray-600">Sweet & Fleshy</p>
+                        </div>
+                        <div class="p-5 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <h4 class="font-bold text-gray-900 mb-1">Mulberries & Guavas</h4>
+                            <p class="text-sm text-gray-600">Antioxidant Rich</p>
+                        </div>
+                        <div class="p-5 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <h4 class="font-bold text-gray-900 mb-1">Coconuts</h4>
+                            <p class="text-sm text-gray-600">Tender & Mature</p>
+                        </div>
+                         <div class="p-5 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <h4 class="font-bold text-gray-900 mb-1">Figs</h4>
+                            <p class="text-sm text-gray-600">Naturally Sweet</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Visual -->
+                <div class="lg:w-1/2 w-full">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] group">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-nature-900/60 to-transparent z-10"></div>
+                        <div class="absolute inset-0 bg-nature-800 transition-transform duration-700 group-hover:scale-105 flex items-center justify-center">
+                            <!-- Abstract placeholder for farm imagery -->
+                            <div class="text-center z-20 relative p-8">
+                                <i data-lucide="sprout" class="w-24 h-24 text-nature-100 mx-auto mb-6 opacity-90 drop-shadow-lg"></i>
+                                <h3 class="text-3xl font-bold text-white mb-2 drop-shadow-md">Farm to Table</h3>
+                                <p class="text-nature-100 text-lg drop-shadow-md">Nurtured by nature, delivered with care.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-corporate-900 pt-20 pb-10 border-t border-corporate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="lg:col-span-2">
+                    <a href="#" class="text-2xl font-bold tracking-tight text-white mb-6 inline-block">Praanvee<span class="text-nature-500">LLP</span></a>
+                    <p class="text-corporate-400 max-w-sm leading-relaxed mb-8">
+                        Delivering operational excellence in project management and providing the finest organic agricultural products directly from our farms to you.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-6 tracking-wider uppercase text-sm">Services</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#management" class="text-corporate-400 hover:text-white transition-colors">Project Management</a></li>
+                        <li><a href="#agriculture" class="text-corporate-400 hover:text-white transition-colors">Organic Agriculture</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-6 tracking-wider uppercase text-sm">Contact</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-nature-500 shrink-0 mt-0.5"></i>
+                            <span class="text-corporate-400">Tower No. 8, Amanora Aspire Towers,<br>Hadapsar, Pune 411028, India</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-nature-500 shrink-0"></i>
+                            <span class="text-corporate-400">+91 7069553828</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-nature-500 shrink-0"></i>
+                            <span class="text-corporate-400">bkdesai16@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-corporate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-white text-sm">
+                    &copy; <span id="year"></span> Praanvee LLP. All rights reserved.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-corporate-800 flex items-center justify-center text-corporate-400 hover:bg-nature-600 hover:text-white transition-colors">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-corporate-800 flex items-center justify-center text-corporate-400 hover:bg-nature-600 hover:text-white transition-colors">
+                        <i data-lucide="twitter" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+        // Set dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
